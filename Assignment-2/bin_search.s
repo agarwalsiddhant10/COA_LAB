@@ -27,6 +27,7 @@ main:
 	li $v0, 5			#Take the first input
 	syscall
 	sw $v0, ($t2)
+	addi $t2, $t2, 4
 	
 	li $t0, 0			#Loop begins
 	j L1
